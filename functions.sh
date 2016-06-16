@@ -61,7 +61,7 @@ setup_git() {
 setup_aosp() {
     if [[ -z ${AOSP_BRANCH_NAME} ]]; then
         repo init -u ${AOSP_MANIFEST_URL}
-    elif
+    else
         repo init -u ${AOSP_MANIFEST_URL} -b ${AOSP_BRANCH_NAME}
     fi
     repo sync
