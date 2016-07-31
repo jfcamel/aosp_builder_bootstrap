@@ -9,8 +9,8 @@ PLATFORM="ubuntu"
 WORKING_DIRECTORY="/mnt/WORKING_DIRECTORY"
 
 # git variables
-GIT_USER_NAME="jfcamel"
-GIT_USER_EMAIL="fujita.jun@gmail.com"
+GIT_USER_NAME="${GIT_USER_NAME}"
+GIT_USER_EMAIL="${GIT_USER_EMAIL}""
 
 # AOSP variables
 AOSP_BRANCH_NAME=""
