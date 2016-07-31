@@ -73,7 +73,7 @@ build() {
     make -j${BUILD_JOBS_NUM}
 }
 
-sendtodist() {
+send_to_dist() {
     if [[ ${OUTPUT_DIST} == "S3" ]];
        s3cmd mb ${OUTPUT_DIST_S3_BUCKET}
        s3cmd sync ${WORKING_DIRECTORY} ${OUTPUT_DIST_S3_BUCKET}
