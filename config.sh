@@ -22,6 +22,6 @@ BUILD_JOBS_NUM=$((1+`cat /proc/cpuinfo | grep processor | wc -l`))
 
 # output distination
 OUTPUT_DIST="S3"
-OUTPUT_DIST_S3_BUCKET="s3://aosp_build_working_directory.jfcamel.org"
+OUTPUT_DIST_S3_BUCKET="{$S3_OUTPUT_BUCKET_NAME}"
 
 
